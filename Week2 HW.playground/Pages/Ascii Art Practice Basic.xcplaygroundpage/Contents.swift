@@ -1,11 +1,10 @@
 import Foundation
 
-// Create text file and copy and paste to add - avoids string quoting requirements
+//in this file, i want to print out a spongebob and squidward
 
-// Load and print one file from bundle
 let path = Bundle.main.path(forResource: "squid.txt", ofType: nil)
 let str = try String(contentsOfFile: path!, encoding: .utf8)
-print(str)
+//print(str)
 
 // same as a function
 func load(_ file :String) -> String {
@@ -15,4 +14,5 @@ func load(_ file :String) -> String {
 }
 
 print(load("squid.txt"))
+print(load("Spongebob.txt"))
 
