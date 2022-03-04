@@ -27,7 +27,7 @@ struct ContentView: View {
 								VStack{
 									HStack{
 										
-									NavigationLink (destination: Page1()) {
+									NavigationLink (destination: Homepage()) {
 	
 										
 										Text("Explore ")

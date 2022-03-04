@@ -20,6 +20,8 @@
 		CB470E7B27C97B1D0042CDC1 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB470E7A27C97B1D0042CDC1 /* song1.mp3 */; };
 		CB470E7D27C97B210042CDC1 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB470E7C27C97B210042CDC1 /* song2.mp3 */; };
 		CB470E7F27C97BCD0042CDC1 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB470E7E27C97BCD0042CDC1 /* song3.mp3 */; };
+		CBB1708627D191A700066248 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1708527D191A700066248 /* Homepage.swift */; };
+		CBB1708A27D1F87F00066248 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1708927D1F87F00066248 /* SearchPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		CB470E7A27C97B1D0042CDC1 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 		CB470E7C27C97B210042CDC1 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song2.mp3; sourceTree = "<group>"; };
 		CB470E7E27C97BCD0042CDC1 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song3.mp3; sourceTree = "<group>"; };
+		CBB1708527D191A700066248 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		CBB1708927D1F87F00066248 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 			children = (
 				CB470E4027C8B24C0042CDC1 /* MusicAppApp.swift */,
 				CB470E4227C8B24C0042CDC1 /* ContentView.swift */,
+				CBB1708527D191A700066248 /* Homepage.swift */,
+				CBB1708927D1F87F00066248 /* SearchPage.swift */,
 				CB470E6C27C94AF00042CDC1 /* Page1.swift */,
 				CB470E6E27C95C800042CDC1 /* Page2.swift */,
 				CB470E4427C8B24E0042CDC1 /* Assets.xcassets */,
@@ -281,6 +287,8 @@
 			files = (
 				CB470E6D27C94AF00042CDC1 /* Page1.swift in Sources */,
 				CB470E6F27C95C800042CDC1 /* Page2.swift in Sources */,
+				CBB1708A27D1F87F00066248 /* SearchPage.swift in Sources */,
+				CBB1708627D191A700066248 /* Homepage.swift in Sources */,
 				CB470E4327C8B24C0042CDC1 /* ContentView.swift in Sources */,
 				CB470E4127C8B24C0042CDC1 /* MusicAppApp.swift in Sources */,
 			);
