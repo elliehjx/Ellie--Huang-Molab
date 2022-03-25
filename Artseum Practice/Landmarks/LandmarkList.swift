@@ -9,25 +9,42 @@
 import SwiftUI
 
 struct LandmarkList: View {
+	
+	@State private var showFavoritesOnly=true
+	
+	var filteredLandmarks: [Landmark]{
+		landmarks.filter{
+			landmark in (!showFavoritesOnly || landmark.isFavorite)
+			
+		}
+		
+	}
+	
 	var body: some View {
 		ZStack{
-		
-		//listing + ignore safe area
-		NavigationView{
-			List(landmarks) {landmark in
-				NavigationLink{
-					LandmarkDetail(landmark: landmark)
+			
+			//listing + ignore safe area
+			NavigationView{
+				List{
+					
+					Toggle(isOn:$showFavoritesOnly){
+						Text("Favorites Only")
+					}
+					
+					ForEach(filteredLandmarks) {landmark in
+						NavigationLink{
+							LandmarkDetail(landmark: landmark)
+						}
+						
+					label: {
+						//call out all the landmarks
+						LandmarkRow(landmark: landmark) }
+					}
+					
 				}
-				
-			label: {
-				//call out all the landmarks
-				LandmarkRow(landmark: landmark) }
-				
-				
+				.navigationTitle("Galleries")
 			}
-			.navigationTitle("Galleries")
-		}
-	
+			
 		}
 	}
 }

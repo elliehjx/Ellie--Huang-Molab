@@ -14,7 +14,7 @@ struct _SignIn: View {
     var body: some View {
 			VStack{
 				//kerning is the space between text
-				//			Text("ArtSeum").font(.system(size: 80)).frame(maxWidth:.infinity, alignment: .leading).foregroundColor(.gray)
+							Text("ArtSeum").font(.system(size: 80)).frame(maxWidth:.infinity, alignment: .leading).foregroundColor(.gray)
 				Text("Sign In").font(.title).fontWeight(.bold).foregroundColor(.black).kerning(1.4).frame(maxWidth:.infinity, alignment: .leading)
 				//(alignment: . leading makes text go to the left side)
 				
