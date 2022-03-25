@@ -13,6 +13,7 @@ struct SearchPage: View {
 
 	var body: some View {
 	
+		
 			NavigationView {
 				VStack(alignment: .leading) {
 					SearchBar(searchText: $searchText, searching: $searching)

@@ -16,10 +16,12 @@ struct Page2: View {
     @State var emojis=["🚴‍♀️","🚢","🚗","🚌","✈️","🚄","🚇","🚒","🚴‍♀️","🚢","🚴","🎿","🏃‍♀️","🏊‍♀️","🏊","⛸️"]
     
     
-    @State var emojiCount=2
+    @State var emojiCount=4
 
     
     var body: some View {
+			ZStack{
+			Color.teal.edgesIgnoringSafeArea(.all)
         VStack{
             
             Text("MEMORY GAME").foregroundColor(Color.white).padding(0.1).font(.largeTitle)
@@ -57,6 +59,7 @@ LazyVGrid(columns:[GridItem(),GridItem()]){ ForEach(emojis[0..<emojiCount], id: 
         .foregroundColor(.white)
         .background(RoundedRectangle(cornerRadius: 8)
           .foregroundColor(.teal))
+			}
     }
     
     
@@ -83,6 +86,7 @@ LazyVGrid(columns:[GridItem(),GridItem()]){ ForEach(emojis[0..<emojiCount], id: 
             }
             
         }
+			
     }
 
 

@@ -16,10 +16,21 @@ struct Homepage: View {
 			//HOMEPAGE TAB
 			ZStack{
 				Color.black.edgesIgnoringSafeArea(.all)
-				NavigationLink (destination: Homepage()){
+				
 				HStack{
 					VStack(alignment: .leading, spacing: 10){
-
+						//						NavigationLink (destination: Homepage()) {
+						//
+						//
+						//							Text("Explore ")
+						//								.font(.system(size: 20))
+						//								.frame(width: 150, height: 40)
+						//								.background(Color.white)
+						//								.foregroundColor(Color.black)
+						//								.cornerRadius(30)
+						//
+						//						}
+						//						Text("Random Playing").foregroundColor(Color.white).font(.title).fontWeight(.bold)
 						Text("Top Picks").foregroundColor(Color.white).font(.title).fontWeight(.bold)
 						ForEach(0 ..< albumCover.count) { index in
 							let song=songName[index]
@@ -54,7 +65,7 @@ struct Homepage: View {
 						}.padding()
 					}
 				}
-				}
+				
 				
 			}
 			.tabItem {
@@ -91,3 +102,6 @@ struct Homepage_Previews: PreviewProvider {
 		Homepage()
 	}
 }
+
+
+//button (action:) {label:, systemImage}

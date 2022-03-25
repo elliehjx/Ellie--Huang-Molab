@@ -22,6 +22,8 @@
 		CB470E7F27C97BCD0042CDC1 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB470E7E27C97BCD0042CDC1 /* song3.mp3 */; };
 		CBB1708627D191A700066248 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1708527D191A700066248 /* Homepage.swift */; };
 		CBB1708A27D1F87F00066248 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1708927D1F87F00066248 /* SearchPage.swift */; };
+		CBB1708E27D2586900066248 /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1708D27D2586900066248 /* Page3.swift */; };
+		CBB1709027D2B01200066248 /* page4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1708F27D2B01200066248 /* page4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		CB470E7E27C97BCD0042CDC1 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song3.mp3; sourceTree = "<group>"; };
 		CBB1708527D191A700066248 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		CBB1708927D1F87F00066248 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		CBB1708D27D2586900066248 /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
+		CBB1708F27D2B01200066248 /* page4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = page4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				CBB1708927D1F87F00066248 /* SearchPage.swift */,
 				CB470E6C27C94AF00042CDC1 /* Page1.swift */,
 				CB470E6E27C95C800042CDC1 /* Page2.swift */,
+				CBB1708D27D2586900066248 /* Page3.swift */,
+				CBB1708F27D2B01200066248 /* page4.swift */,
 				CB470E4427C8B24E0042CDC1 /* Assets.xcassets */,
 				CB470E7827C969520042CDC1 /* Music App Elements */,
 				CB470E4627C8B24E0042CDC1 /* Preview Content */,
@@ -288,9 +294,11 @@
 				CB470E6D27C94AF00042CDC1 /* Page1.swift in Sources */,
 				CB470E6F27C95C800042CDC1 /* Page2.swift in Sources */,
 				CBB1708A27D1F87F00066248 /* SearchPage.swift in Sources */,
+				CBB1708E27D2586900066248 /* Page3.swift in Sources */,
 				CBB1708627D191A700066248 /* Homepage.swift in Sources */,
 				CB470E4327C8B24C0042CDC1 /* ContentView.swift in Sources */,
 				CB470E4127C8B24C0042CDC1 /* MusicAppApp.swift in Sources */,
+				CBB1709027D2B01200066248 /* page4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MusicApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2MYMR4HZM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -479,6 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MusicApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2MYMR4HZM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
