@@ -8,6 +8,10 @@
 
 
 import Foundation
+//adding user storage
+import Combine
+
+
 
 var landmarks: [Landmark] = load("landmarkData.json")
 
