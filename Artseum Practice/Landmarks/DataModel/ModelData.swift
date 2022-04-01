@@ -11,9 +11,21 @@ import Foundation
 //adding user storage
 import Combine
 
+//ObservableObject declare a new model type
+final class ModelData: ObservableObject{
+	@Published var landmarks: [Landmark] = load("landmarkData.json")
+	
+	
+	//category names as keys, array pf associated lanmarks for each key
+	var categories: [String:[Landmark]]{
+		Dictionary(
+			grouping:landmarks,
+			by: {$0.category.rawValue}
+		)
+		
+	}
+}
 
-
-var landmarks: [Landmark] = load("landmarkData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
 	let data: Data

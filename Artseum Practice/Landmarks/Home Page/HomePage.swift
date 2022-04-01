@@ -9,10 +9,16 @@ import SwiftUI
 
 
 struct HomePage: View {
-	
+	@State var ShowLogin = false
 	var body: some View {
-		
+		NavigationView {
+						
 		ZStack{
+			
+			NavigationLink(destination: Login(),
+										 isActive: $ShowLogin) {
+				}
+			
 			Image("james").resizable()
 				.aspectRatio(contentMode:.fit)
 				.clipShape(Circle())
@@ -22,9 +28,10 @@ struct HomePage: View {
 				Text("ArtSeum").fontWeight(.ultraLight).foregroundColor(.white).font(.system(size:100)).padding(.top,150)
 					
 					VStack {
-
+						//action expected to be used context
 						Button(action: {
-							Login()
+							ShowLogin.toggle()
+							//Login()
 						}) {
 							Text("Explore your art journey")
 								.font(.system(size:25))
@@ -34,6 +41,7 @@ struct HomePage: View {
 			
 		}
 		.foregroundColor(Color.white)
+	}
 	}
 	}
 }

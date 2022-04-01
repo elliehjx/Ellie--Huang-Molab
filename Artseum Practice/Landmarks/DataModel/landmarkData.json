@@ -1,7 +1,7 @@
 [
     {
         "name": "David Zwirner",
-        "category": "Rivers",
+        "category": "Gallery",
         "city": "Twentynine Palms",
         "state": "California",
         "id": 1001,
@@ -17,7 +17,7 @@
     },
     {
         "name": "Gagosian Gallery",
-        "category": "Lakes",
+        "category": "Museum",
         "city": "Port Alsworth",
         "state": "Alaska",
         "id": 1002,
@@ -33,7 +33,7 @@
     },
     {
         "name": "The Museum of Modern Art",
-        "category": "Mountains",
+        "category": "Exhibition",
         "city": "Skagway",
         "state": "Alaska",
         "id": 1003,
@@ -49,7 +49,7 @@
     },
     {
         "name": "Sean Kelly",
-        "category": "Lakes",
+        "category": "Museum",
         "city": "Browning",
         "state": "Montana",
         "id": 1004,
@@ -65,7 +65,7 @@
     },
     {
         "name": "Metropolitan Museum of Art",
-        "category": "Lakes",
+        "category": "Museum",
         "city": "Twin Lakes",
         "state": "Alaska",
         "id": 1005,
@@ -81,7 +81,7 @@
     },
     {
         "name": "303 Gallery",
-        "category": "Mountains",
+        "category": "Exhibition",
         "city": "West Glacier",
         "state": "Montana",
         "id": 1006,
@@ -97,7 +97,7 @@
     },
     {
         "name": "Kasmin Gallery",
-        "category": "Rivers",
+        "category": "Gallery",
         "city": "Eaking",
         "state": "Alaska",
         "id": 1007,
@@ -113,7 +113,7 @@
     },
     {
         "name": "Whitney Museum of American Art",
-        "category": "Mountains",
+        "category": "Exhibition",
         "city": "Icy Bay",
         "state": "Alaska",
         "id": 1008,

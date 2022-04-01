@@ -42,7 +42,7 @@ struct Login: View {
 			//for sign up and sign in condition
 			ZStack{
 				
-			//Transitions
+				//Transitions
 				
 				if showSignUp{
 					SignUp()

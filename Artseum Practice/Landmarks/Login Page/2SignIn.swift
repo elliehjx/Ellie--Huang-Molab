@@ -11,8 +11,16 @@ import SwiftUI
 struct _SignIn: View {
 	@State var email=""
 	@State var password=""
+	@State var ShowLandmarkList=false
+	
     var body: some View {
+				
+			//navigation view needs to be the outmost
+	//		NavigationView{
 			VStack{
+					NavigationLink(destination:LandmarkList(),isActive: $ShowLandmarkList){
+						EmptyView()
+					}
 				//kerning is the space between text
 							Text("ArtSeum").font(.system(size: 80)).frame(maxWidth:.infinity, alignment: .leading).foregroundColor(.gray)
 				Text("Sign In").font(.title).fontWeight(.bold).foregroundColor(.black).kerning(1.4).frame(maxWidth:.infinity, alignment: .leading)
@@ -49,12 +57,12 @@ struct _SignIn: View {
 				/**-----------------------------------------Button----------------------------------------------**/
 				
 				//Forget password 
-				Button(action: {LandmarkList()},label: {
+				Button(action: {},label: {
 					Text ("Forgot password?").fontWeight(.bold).foregroundColor(.gray)
 				}).frame(maxWidth: . infinity, alignment: .trailing).padding(.top,10)
 				
 				//Next
-				Button(action:{}, label: {
+				Button(action:{ShowLandmarkList.toggle()}, label: {
 					Image(systemName:"arrow.right").font(.system(size:24)).foregroundColor(.white).padding().background(Color(.orange)).clipShape(Circle())//.shadow(radius: 7)
 					//?Q: HOW TO CHANGE SHADOW COLOR
 				})
@@ -63,8 +71,10 @@ struct _SignIn: View {
 			}
 			.padding()
     }
+		
+//}
 }
-
+	
 struct _SignIn_Previews: PreviewProvider {
     static var previews: some View {
         _SignIn()
