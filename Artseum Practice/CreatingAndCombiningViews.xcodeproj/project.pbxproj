@@ -28,6 +28,7 @@
 		CBEA775D27F5F5110014F71F /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA775C27F5F5110014F71F /* HexagonParameters.swift */; };
 		CBEA775F27F5F8C50014F71F /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA775E27F5F8C50014F71F /* BadgeBackground.swift */; };
 		CBEA776727F5FDE60014F71F /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA776627F5FDE60014F71F /* CategoryHome.swift */; };
+		CBEA776B27F74DB00014F71F /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA776A27F74DB00014F71F /* CategoryRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		CBEA775C27F5F5110014F71F /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		CBEA775E27F5F8C50014F71F /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 		CBEA776627F5FDE60014F71F /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		CBEA776A27F74DB00014F71F /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		D37C64DBD0434958E334DB7A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		EAFCC7FAFBD54E954DE59292 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CBEA776627F5FDE60014F71F /* CategoryHome.swift */,
+				CBEA776A27F74DB00014F71F /* CategoryRow.swift */,
 			);
 			path = CategoryHome;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				CBEA775927F3A0410014F71F /* test.swift in Sources */,
 				CBC3438127EC19D500172F83 /* ModelData.swift in Sources */,
 				CBEA775F27F5F8C50014F71F /* BadgeBackground.swift in Sources */,
+				CBEA776B27F74DB00014F71F /* CategoryRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
