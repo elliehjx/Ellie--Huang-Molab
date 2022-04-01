@@ -24,10 +24,12 @@ struct CategoryRow: View {
 			ScrollView(.horizontal,showsIndicators: false){
 				HStack(alignment: .top, spacing:0){
 					ForEach(items){
-						landmark in Text(landmark.name)
+						landmark in
+						//replace text to landmark item
+						CategoryItem(landmark: landmark)
 					}
 				}
-				//frame for the whole name row
+				
 			}.frame(height:185)
 		}
 	}
