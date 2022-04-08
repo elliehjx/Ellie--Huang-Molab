@@ -25,8 +25,13 @@ struct CategoryRow: View {
 				HStack(alignment: .top, spacing:0){
 					ForEach(items){
 						landmark in
+						NavigationLink{
+							LandmarkDetail(landmark: landmark)
+						} label: {
+				
 						//replace text to landmark item
 						CategoryItem(landmark: landmark)
+						}
 					}
 				}
 				

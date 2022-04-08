@@ -7,7 +7,7 @@
         "id": 1001,
         "isFeatured": true,
         "isFavorite": true,
-        "park": "Joshua Tree National Park",
+        "park": "Dan Flavin",
         "coordinates": {
             "longitude": -116.166868,
             "latitude": 34.011286
@@ -55,7 +55,7 @@
         "id": 1004,
         "isFeatured": true,
         "isFavorite": true,
-        "park": "Glacier National Park",
+        "park": "James Turrell",
         "coordinates": {
             "longitude": -113.536248,
             "latitude": 48.69423
@@ -103,7 +103,7 @@
         "id": 1007,
         "isFeatured": true,
         "isFavorite": false,
-        "park": "Charley Rivers National Preserve",
+        "park": "Yayoi Kusama",
         "coordinates": {
             "longitude": -143.122586,
             "latitude": 65.350021

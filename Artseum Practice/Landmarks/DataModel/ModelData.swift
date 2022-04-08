@@ -15,6 +15,11 @@ import Combine
 final class ModelData: ObservableObject{
 	@Published var landmarks: [Landmark] = load("landmarkData.json")
 	
+	//features[0]
+	var features: [Landmark]{
+		landmarks.filter {$0.isFeatured}
+	}
+	
 	
 	//category names as keys, array pf associated lanmarks for each key
 	var categories: [String:[Landmark]]{

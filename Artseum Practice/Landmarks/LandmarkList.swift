@@ -26,7 +26,6 @@ struct LandmarkList: View {
 	var body: some View {
 		
 		ZStack{
-			
 			//listing + ignore safe area
 		//	NavigationView{
 				List{
@@ -45,10 +44,8 @@ struct LandmarkList: View {
 						LandmarkRow(landmark: landmark)
 							.frame(height:100)
 						
-						
 					}
 					}
-					
 					
 				}.background(Color.orange)
 				
