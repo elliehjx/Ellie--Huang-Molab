@@ -10,8 +10,8 @@ import SwiftUI
 
 struct CategoryHome: View {
 //	@EnvironmentObject var modelData: ModelData
-//	@State private var showingProfile = false
 	
+  @State private var showingProfile = false
 	@State private var selection: Tab = .featured
 	enum Tab{
 		case featured
@@ -28,6 +28,15 @@ struct CategoryHome: View {
 			
 							LandmarkList().tabItem{Label("List",systemImage:"list.bullet")}.tag(Tab.list)
 			
+						}.toolbar {
+							Button {
+								showingProfile.toggle()
+							} label: {
+								Label("User Profile",systemImage:"person.crop.circle")
+							}
+						}.sheet(isPresented: $showingProfile){
+							//call out the variable data one more time
+							ProfileMain(profile: Profile.`default`)
 						}
 			
 			
@@ -38,7 +47,9 @@ struct CategoryHome: View {
 
 struct CategoryHome_Previews: PreviewProvider {
 	static var previews: some View {
+		NavigationView {
 		CategoryHome()
 			.environmentObject(ModelData())
+		}
 	}
 }
