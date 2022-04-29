@@ -14,7 +14,7 @@ struct CategoryItem: View {
     var body: some View {
 			VStack(alignment: .leading){
 				landmark.image.renderingMode(.original).resizable().frame(width:200,height:155).cornerRadius(1)
-				Text(landmark.name).foregroundColor(.primary).font(.caption)
+				Text(landmark.name).foregroundColor(.primary).font(.caption).bold().padding(.bottom,10)
 			}.padding(.leading,15)
         //foregroundcolor for the text
     }

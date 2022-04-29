@@ -18,7 +18,7 @@ struct CategoryRow: View {
 	var body: some View {
 		//alignment
 		VStack(alignment: .leading){
-			Text(categoryName).font(.title).padding(.leading,15).padding(.top,20)
+			Text(categoryName).font(.title).bold().padding(.leading,15).padding(.top,20)
 			
 			//calling the name
 			ScrollView(.horizontal,showsIndicators: false){

@@ -18,7 +18,7 @@ struct _SignIn: View {
 			//navigation view needs to be the outmost
 	//		NavigationView{
 			VStack{
-					NavigationLink(destination:LandmarkList(),isActive: $ShowLandmarkList){
+					NavigationLink(destination:CategoryHome(),isActive: $ShowLandmarkList){
 						EmptyView()
 					}
 				//kerning is the space between text

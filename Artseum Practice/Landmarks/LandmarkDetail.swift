@@ -18,10 +18,13 @@ struct LandmarkDetail: View {
 	}
 	
 	var body: some View {
+		ZStack {
+			RadialGradient(gradient: Gradient(colors: [.orange, .white]), center: .center, startRadius: 50, endRadius: 470)
 		ScrollView {
+			
 			MapView(coordinate: landmark.locationCoordinate)
 				.ignoresSafeArea(edges: .top)
-				.frame(height: 300)
+				.frame(height: 300).padding(.top,50)
 			
 			CircleImage(image: landmark.image)
 				.offset(y: -130)
@@ -49,8 +52,9 @@ struct LandmarkDetail: View {
 					.font(.title2)
 				Text(landmark.description)
 			}
+			}
 			.padding()
-		}
+		}.edgesIgnoringSafeArea(.all)
 		.navigationTitle(landmark.name)
 		.navigationBarTitleDisplayMode(.inline)
 	}

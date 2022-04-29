@@ -9,25 +9,30 @@
 import SwiftUI
 
 struct CategoryHome: View {
-	@EnvironmentObject var modelData: ModelData
-	@State private var showingProfile = false
+//	@EnvironmentObject var modelData: ModelData
+//	@State private var showingProfile = false
+	
+	@State private var selection: Tab = .featured
+	enum Tab{
+		case featured
+		case list}
+	
 	
 	var body: some View {
-		NavigationView {
-			List {
-				PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
-					.aspectRatio(3 / 2, contentMode: .fit)
-					.listRowInsets(EdgeInsets())
-				
-				ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-					CategoryRow(categoryName: key, items: modelData.categories[key]!)
-				}
-				.listRowInsets(EdgeInsets())
-			}
-			.listStyle(.inset)
-			.navigationTitle("Featured")
+	//	NavigationView {
 			
-		}
+						TabView(selection: $selection){
+							CategoryList().tabItem{
+								Label("Featured",systemImage: "star")
+							}.tag(Tab.featured)
+			
+							LandmarkList().tabItem{Label("List",systemImage:"list.bullet")}.tag(Tab.list)
+			
+						}
+			
+			
+			
+	//	}
 	}
 }
 
