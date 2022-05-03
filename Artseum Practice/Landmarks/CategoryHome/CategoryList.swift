@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CategoryList: View {
 	@EnvironmentObject var modelData: ModelData
-	@State private var showingProfile = false
+	//@State private var showingProfile = false
 	
 	
     var body: some View {

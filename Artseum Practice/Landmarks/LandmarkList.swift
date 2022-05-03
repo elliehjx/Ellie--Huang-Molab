@@ -47,9 +47,8 @@ struct LandmarkList: View {
 					}
 					}
 					
-				}.background(Color.orange)
+				}.background(Color.orange).navigationTitle("Galleries")
 				
-				.navigationTitle("Galleries")
 			}
 			
 		//}

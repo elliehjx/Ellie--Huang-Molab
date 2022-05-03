@@ -11,11 +11,14 @@ import SwiftUI
 struct CategoryHome: View {
 //	@EnvironmentObject var modelData: ModelData
 	
-  @State private var showingProfile = false
+  @State private var showingLocation = false
 	@State private var selection: Tab = .featured
 	enum Tab{
 		case featured
-		case list}
+		case list
+		case account
+		
+	}
 	
 	
 	var body: some View {
@@ -27,17 +30,21 @@ struct CategoryHome: View {
 							}.tag(Tab.featured)
 			
 							LandmarkList().tabItem{Label("List",systemImage:"list.bullet")}.tag(Tab.list)
+							
+							ProfileMain(profile: Profile.`default`).tabItem{Label("account",systemImage: "person.crop.circle")}.tag(Tab.account)
 			
 						}.toolbar {
 							Button {
-								showingProfile.toggle()
+								showingLocation.toggle()
 							} label: {
-								Label("User Profile",systemImage:"person.crop.circle")
+								Label("LocationSearch",systemImage:"location.circle").foregroundColor(Color(.systemPink))
 							}
-						}.sheet(isPresented: $showingProfile){
+						}.sheet(isPresented: $showingLocation){
 							//call out the variable data one more time
-							ProfileMain(profile: Profile.`default`)
+							LocationPage()
 						}
+		
+		
 			
 			
 			
@@ -50,6 +57,6 @@ struct CategoryHome_Previews: PreviewProvider {
 		NavigationView {
 		CategoryHome()
 			.environmentObject(ModelData())
-		}
+	}
 	}
 }
