@@ -7,7 +7,7 @@
         "id": 1001,
         "isFeatured": true,
         "isFavorite": true,
-        "park": "525W 19TH ST",
+        "park": "525w 19th St",
         "coordinates": {
             "longitude": -116.166868,
             "latitude": 34.011286
@@ -18,39 +18,39 @@
     {
         "name": "Gagosian Gallery",
         "category": "Museum",
-        "city": "Port Alsworth",
-        "state": "Alaska",
+        "city": "New York",
+        "state": "Contemporary Art",
         "id": 1002,
         "isFeatured": false,
         "isFavorite": false,
-        "park": "Lake Clark National Park and Preserve",
+        "park": "555w 24th St",
         "coordinates": {
             "longitude": -152.665167,
             "latitude": 59.980167
         },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
+        "description": "Gagosian is a contemporary art gallery owned and directed by Larry Gagosian. The gallery exhibits some of the most influential artists of the 20th and 21st centuries.",
         "imageName": "silversalmoncreek"
     },
     {
         "name": "MOMA",
         "category": "Exhibition",
-        "city": "Skagway",
-        "state": "Alaska",
+        "city": "New York",
+        "state": "Modern Art",
         "id": 1003,
         "isFeatured": false,
         "isFavorite": true,
-        "park": "Klondike Gold Rush National Historical Park",
+        "park": "11w 53rd St",
         "coordinates": {
             "longitude": -135.334571,
             "latitude": 59.560551
         },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
+        "description": "The Museum of Modern Art is a place that fuels creativity, ignites minds, and provides inspiration. With extraordinary exhibitions and the world's finest collection of modern and contemporary art, MoMA is dedicated to the conversation between the past and the present.",
         "imageName": "chilkoottrail"
     },
     {
         "name": "Sean Kelly",
         "category": "Museum",
-        "city": "Browning",
+        "city": "New York",
         "state": "Montana",
         "id": 1004,
         "isFeatured": true,
