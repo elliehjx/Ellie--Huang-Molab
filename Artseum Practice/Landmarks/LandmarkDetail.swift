@@ -19,25 +19,26 @@ struct LandmarkDetail: View {
 	
 	var body: some View {
 		ZStack {
-			RadialGradient(gradient: Gradient(colors: [.orange, .white]), center: .center, startRadius: 50, endRadius: 470)
+			RadialGradient(gradient: Gradient(colors: [.white, .white]), center: .center, startRadius: 10, endRadius: 700)
 		ScrollView {
 			
 			CircleImage(image: landmark.image)
-				.offset(y: -130)
+				.offset(y: 70)
 				.padding(.bottom, -130)
 			
 			VStack(alignment: .leading) {
+				
 				HStack{
 				Text(landmark.name)
-					.font(.title)
+					.font(.title).fontWeight(.black)
 					FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
 					
-				}
+				}.padding(.top,220).padding(.leading,80)
 				
 				HStack {
-					Text(landmark.park)
+					Text(landmark.park).padding(.leading,80)
 					Spacer()
-					Text(landmark.state)
+					Text(landmark.state).padding(.trailing,100)
 				}
 				.font(.subheadline)
 				.foregroundColor(.secondary)
@@ -45,15 +46,19 @@ struct LandmarkDetail: View {
 				Divider()
 				
 				Text("About \(landmark.name)")
-					.font(.title2)
-				Text(landmark.description)
+					.font(.title2).padding(.leading,80).padding(.top,10).padding(.bottom,10)
+				Text(landmark.description).fontWeight(.light).padding(.leading,80).padding(.trailing,100).padding(.top,5).padding(.bottom,20)
 				
+				Divider()
+				Text("Location")
+					.font(.title2).fontWeight(.bold).padding(.leading,80)
 				MapView(coordinate: landmark.locationCoordinate)
 					.ignoresSafeArea(edges: .top)
-					.frame(height: 300).padding(.top,50)
+					.frame(height: 200)
+				
+				Divider()
 			}
-			}
-			.padding()
+		}.padding(.top,50).padding(.leading,50).padding(.trailing,20)
 		}.edgesIgnoringSafeArea(.all)
 		.navigationTitle(landmark.name)
 		.navigationBarTitleDisplayMode(.inline)
