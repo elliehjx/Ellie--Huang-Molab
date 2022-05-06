@@ -20,12 +20,13 @@ struct LocationPage: View {
 					//TEXT FOR GETTING LOCATION
 					Text("Check your nearby art events").fontWeight(.ultraLight).foregroundColor(.white).font(.system(size:30)).frame(width:400)
 					
-					VStack {
+					//VStack {
+						realTimeLocation()
 					//BUTTON FOR GET LOCATION
-							Text("Current Location Button")
-								.font(.system(size:25))
-								.fontWeight(.ultraLight)
-						}
+//							Text("Current Location Button")
+//								.font(.system(size:25))
+//								.fontWeight(.ultraLight)
+						//}
 					
 				}
 				.foregroundColor(Color.white)

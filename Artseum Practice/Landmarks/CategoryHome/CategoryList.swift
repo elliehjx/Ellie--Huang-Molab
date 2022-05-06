@@ -25,7 +25,6 @@ struct CategoryList: View {
 				.listRowInsets(EdgeInsets())
 			}
 			.listStyle(.inset)
-			.navigationTitle("Featured")
     }
 }
 

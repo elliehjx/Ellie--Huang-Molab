@@ -2,23 +2,7 @@
 //  realTimeLocation.swift
 //  Landmarks
 //
-//  Created by ellie huang on 4/1/22.
-//  Copyright © 2022 Apple. All rights reserved.
-//
 
-//import SwiftUI
-//
-//struct realTimeLocation: View {
-//    var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//    }
-//}
-//
-//struct realTimeLocation_Previews: PreviewProvider {
-//    static var previews: some View {
-//        realTimeLocation()
-//    }
-//}
 import SwiftUI
 import CoreLocation
 import CoreLocationUI

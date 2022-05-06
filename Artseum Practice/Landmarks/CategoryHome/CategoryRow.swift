@@ -18,8 +18,19 @@ struct CategoryRow: View {
 	var body: some View {
 		//alignment
 		VStack(alignment: .leading){
+			HStack{
 			Text(categoryName).font(.title).bold().padding(.leading,15).padding(.top,20)
-			
+				Spacer()
+				
+				NavigationLink{
+					GalleryAll()
+				} label: {
+					
+					Text("More >").font(.title3).padding(.top,20).padding(.trailing,20).foregroundColor(.pink)
+				}
+
+					
+			}
 			//calling the name
 			ScrollView(.horizontal,showsIndicators: false){
 				HStack(alignment: .top, spacing:0){
@@ -37,8 +48,9 @@ struct CategoryRow: View {
 				
 			}.frame(height:185)
 		}
+		}
 	}
-}
+
 
 struct CategoryRow_Previews: PreviewProvider {
 	//call out the data
