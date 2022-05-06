@@ -38,8 +38,8 @@ struct realTimeLocation: View {
 			LocationButton {
 				locationManager.requestLocation()
 			}
-			.frame(height: 44)
-			.padding()
+			.frame(height: 44).cornerRadius(20)
+			.padding().foregroundColor(Color.white)
 		}
 	}
 }

@@ -31,7 +31,7 @@ struct LandmarkList: View {
 				List{
 					
 					Toggle(isOn:$showFavoritesOnly){
-						Text("Favorites Only")
+						Text("Favorites Only").font(.title2).bold().foregroundColor(Color.blue)
 					}
 					
 					ForEach(filteredLandmarks) {landmark in
@@ -42,12 +42,12 @@ struct LandmarkList: View {
 					label: {
 						//call out all the landmarks
 						LandmarkRow(landmark: landmark)
-							.frame(height:100)
+							.frame(height:150)
 						
 					}
-					}
+					}.listRowBackground(Color.white)
 					
-				}.background(Color.orange)//.navigationTitle("Galleries")
+				}.listStyle(.plain)
 				
 			}
 			

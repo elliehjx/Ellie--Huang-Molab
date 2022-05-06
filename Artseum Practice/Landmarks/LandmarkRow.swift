@@ -17,8 +17,11 @@ struct LandmarkRow: View {
 			landmark.image
 				.resizable()
 				.frame(width: 70, height: 70).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-			Text(landmark.name)
+			VStack(alignment: .leading){
+			Text(landmark.name).font(.system(size: 18)).bold()
 			
+			Text(landmark.state).font(.system(size: 12)).bold().foregroundColor(Color.gray)
+			}
 			Spacer()
 			
 			if landmark.isFavorite{

@@ -23,13 +23,12 @@ struct CategoryHome: View {
 	
 	var body: some View {
 	//	NavigationView {
-			
 						TabView(selection: $selection){
 							CategoryList().tabItem{
-								Label("Featured",systemImage: "star")
+								Label("Featured",systemImage: "sparkles")
 							}.tag(Tab.featured)
 			
-							LandmarkList().tabItem{Label("List",systemImage:"list.bullet")}.tag(Tab.list)
+							LandmarkList().tabItem{Label("List",systemImage:"wand.and.stars")}.tag(Tab.list)
 							
 							ProfileMain(profile: Profile.`default`).tabItem{Label("account",systemImage: "person.crop.circle")}.tag(Tab.account)
 			
@@ -42,7 +41,7 @@ struct CategoryHome: View {
 						}.sheet(isPresented: $showingLocation){
 							//call out the variable data one more time
 							LocationPage()
-						}
+						} 	
 		
 		
 			

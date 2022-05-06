@@ -20,14 +20,8 @@ struct CategoryRow: View {
 		VStack(alignment: .leading){
 			HStack{
 			Text(categoryName).font(.title).bold().padding(.leading,15).padding(.top,20)
-				Spacer()
-				
-				NavigationLink{
-					GalleryAll()
-				} label: {
-					
-					Text("More >").font(.title3).padding(.top,20).padding(.trailing,20).foregroundColor(.pink)
-				}
+				//Spacer()
+
 
 					
 			}
@@ -47,6 +41,12 @@ struct CategoryRow: View {
 				}
 				
 			}.frame(height:185)
+			NavigationLink{
+				GalleryAll()
+			} label: {
+				
+				Text("More >").font(.system(size: 16)).bold().padding(.leading,20).padding(.bottom,10).foregroundColor(.pink)
+			}
 		}
 		}
 	}
