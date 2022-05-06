@@ -51,23 +51,23 @@
         "name": "Sean Kelly",
         "category": "Museum",
         "city": "New York",
-        "state": "Montana",
+        "state": "Contemporary Art",
         "id": 1004,
         "isFeatured": true,
         "isFavorite": true,
-        "park": "James Turrell",
+        "park": "475 10th Ave",
         "coordinates": {
             "longitude": -113.536248,
             "latitude": 48.69423
         },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
+        "description": "Sean Kelly Gallery, founded in 1991 in New York City by British-born Sean Kelly, represents established and mid-career artists, particularly with work based in installation and performance..",
         "imageName": "stmarylake"
     },
     {
         "name": "Metropolitan Museum of Art",
         "category": "Museum",
-        "city": "Twin Lakes",
-        "state": "Alaska",
+        "city": "New York",
+        "state": "History",
         "id": 1005,
         "isFeatured": false,
         "isFavorite": false,
@@ -112,7 +112,7 @@
         "imageName": "charleyrivers"
     },
     {
-        "name": "Whitney Museum of American Art",
+        "name": "Whitney Museum",
         "category": "Exhibition",
         "city": "Icy Bay",
         "state": "Alaska",
