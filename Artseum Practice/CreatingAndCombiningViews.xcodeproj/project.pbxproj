@@ -24,6 +24,9 @@
 		CB6E3C8D2821B1DC0030C427 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3C8C2821B1DC0030C427 /* SearchBar.swift */; };
 		CB6E3C8F2824649C0030C427 /* GalleryAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3C8E2824649B0030C427 /* GalleryAll.swift */; };
 		CB6E3C912824659E0030C427 /* ExhibitionAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3C902824659E0030C427 /* ExhibitionAll.swift */; };
+		CB6E3C952825AA040030C427 /* CardView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3C942825AA040030C427 /* CardView1.swift */; };
+		CB6E3C972825AB2D0030C427 /* CardView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3C962825AB2D0030C427 /* CardView2.swift */; };
+		CB6E3C992825AB3B0030C427 /* CardView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3C982825AB3B0030C427 /* CardView3.swift */; };
 		CBC3437B27EC110A00172F83 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = CBC3437A27EC110A00172F83 /* landmarkData.json */; };
 		CBC3437F27EC11E000172F83 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3437E27EC11E000172F83 /* Landmark.swift */; };
 		CBC3438127EC19D500172F83 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC3438027EC19D500172F83 /* ModelData.swift */; };
@@ -67,6 +70,9 @@
 		CB6E3C8C2821B1DC0030C427 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		CB6E3C8E2824649B0030C427 /* GalleryAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryAll.swift; sourceTree = "<group>"; };
 		CB6E3C902824659E0030C427 /* ExhibitionAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionAll.swift; sourceTree = "<group>"; };
+		CB6E3C942825AA040030C427 /* CardView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView1.swift; sourceTree = "<group>"; };
+		CB6E3C962825AB2D0030C427 /* CardView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView2.swift; sourceTree = "<group>"; };
+		CB6E3C982825AB3B0030C427 /* CardView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView3.swift; sourceTree = "<group>"; };
 		CBC3437A27EC110A00172F83 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		CBC3437E27EC11E000172F83 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		CBC3438027EC19D500172F83 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -230,6 +236,9 @@
 				CBEA775C27F5F5110014F71F /* HexagonParameters.swift */,
 				CBEA775E27F5F8C50014F71F /* BadgeBackground.swift */,
 				CB25433D281C7D9000811D3E /* CardView.swift */,
+				CB6E3C942825AA040030C427 /* CardView1.swift */,
+				CB6E3C962825AB2D0030C427 /* CardView2.swift */,
+				CB6E3C982825AB3B0030C427 /* CardView3.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -327,9 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB25433C281C77DE00811D3E /* ProfileMain.swift in Sources */,
+				CB6E3C972825AB2D0030C427 /* CardView2.swift in Sources */,
 				CBEA775D27F5F5110014F71F /* HexagonParameters.swift in Sources */,
 				CBDE72402800185B0052C107 /* PageView.swift in Sources */,
 				CB6E3C8F2824649C0030C427 /* GalleryAll.swift in Sources */,
+				CB6E3C952825AA040030C427 /* CardView1.swift in Sources */,
 				C20D77F024B665D7002E7AEA /* ContentView.swift in Sources */,
 				CB25433E281C7D9000811D3E /* CardView.swift in Sources */,
 				CBDE723E2800162B0052C107 /* FeatureCard.swift in Sources */,
@@ -349,6 +360,7 @@
 				CBDE723C2800134B0052C107 /* PageViewController.swift in Sources */,
 				CBEA775627F3873F0014F71F /* FavoriteButton.swift in Sources */,
 				CB6E3C8D2821B1DC0030C427 /* SearchBar.swift in Sources */,
+				CB6E3C992825AB3B0030C427 /* CardView3.swift in Sources */,
 				CB6E3C8B2821A2520030C427 /* LocationPage.swift in Sources */,
 				CB383E2D27EC2CE500E97C06 /* LandmarkRow.swift in Sources */,
 				CBEA775927F3A0410014F71F /* test.swift in Sources */,
