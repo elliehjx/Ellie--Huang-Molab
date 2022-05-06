@@ -13,6 +13,7 @@ struct CategoryHome: View {
 	
   @State private var showingLocation = false
 	@State private var selection: Tab = .featured
+	@State var txt = ""
 	enum Tab{
 		case featured
 		case list
@@ -22,6 +23,8 @@ struct CategoryHome: View {
 	
 	
 	var body: some View {
+		
+		
 	//	NavigationView {
 						TabView(selection: $selection){
 							CategoryList().tabItem{
@@ -33,6 +36,17 @@ struct CategoryHome: View {
 							ProfileMain(profile: Profile.`default`).tabItem{Label("account",systemImage: "person.crop.circle")}.tag(Tab.account)
 			
 						}.toolbar {
+							HStack{
+							HStack{
+								
+								Image(systemName: "magnifyingglass").font(.body)
+								
+								TextField("Search", text: $txt)
+								
+							}.padding(.trailing,220)
+								.background(Color("Color1"))
+							.cornerRadius(20)
+
 							Button {
 								showingLocation.toggle()
 							} label: {
@@ -43,7 +57,7 @@ struct CategoryHome: View {
 							LocationPage()
 						} 	
 		
-		
+						}
 			
 			
 			

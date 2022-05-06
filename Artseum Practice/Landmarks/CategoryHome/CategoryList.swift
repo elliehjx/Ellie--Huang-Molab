@@ -14,6 +14,7 @@ struct CategoryList: View {
 	
 	
     var body: some View {
+
 			List {
 				PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
 					.aspectRatio(3 / 2, contentMode: .fit)

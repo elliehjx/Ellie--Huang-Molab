@@ -31,7 +31,7 @@ struct LandmarkList: View {
 				List{
 					
 					Toggle(isOn:$showFavoritesOnly){
-						Text("Favorites Only").font(.title2).bold().foregroundColor(Color.blue)
+						Text("Favorites Only").font(.title2).bold().foregroundColor(Color.black).frame(height:100)
 					}
 					
 					ForEach(filteredLandmarks) {landmark in
